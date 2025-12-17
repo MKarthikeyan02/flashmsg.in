@@ -1,2 +1,2 @@
 # NOTIFICATIONS FORMATTER 
-        # - FURY 02
+  # - FURY 02
