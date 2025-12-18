@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-<title>FURY | Professional Suite</title>
+<title>FURY | Flash Message </title>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -132,18 +132,18 @@
 <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300 font-sans flex flex-col h-full w-full">
 <!-- HIDDEN STORAGE -->
 <div id="storage-area" style="display:none;">
-<textarea id="tpl-future">Tender Period Alert (MCX) - {DATE}
+<textarea id="tpl-future"> {SYMBOLS} (FUTURE) Expiry Alert - {DATE}
     <br>
-{SYMBOLS} ({EXPIRY}) contract tender period starts on {TENDER}. We request you to close or roll over all open positions (if any) before 10:30 PM today ({TENDER}), otherwise RMS team will square off the position.</textarea>
-<textarea id="tpl-option">Expiry Alert (MCX) - {DATE}
+{SYMBOLS} ({EXPIRY}) contracts are expiring today. Contracts will be blocked @ 10:15 PM. If client has any open position to be closed before 10:30 PM today ({TENDER}), otherwise RMS team will be square off the position.</textarea>
+<textarea id="tpl-option"> {SYMBOLS} (OPTION) Expiry Alert - {DATE}
     <br>
-{SYMBOLS} ({EXPIRY}) contracts are expiring today. Contracts will be blocked @ 10:45 PM. If client has any open position, it must be closed before 10:30 PM today ({TENDER}), otherwise RMS team will square off the position.</textarea>
+{SYMBOLS} ({EXPIRY}) contracts are expiring today. Contracts will be blocked @ 10:15 PM. If client has any open position to be closed before 10:30 PM today ({TENDER}), otherwise RMS team will be square off the position.</textarea>
 <textarea id="tpl-ob-header">Opening Bell 🔔
 
 </textarea>
-<textarea id="tpl-ob-line">· {CONTENT}</textarea>
+<textarea id="tpl-ob-line">🔷 {CONTENT}</textarea>
 <!-- Simplified Header Templates (Strings to be copied) -->
-<textarea id="tpl-market">📢 MARKET UPDATE 📰</textarea>
+<textarea id="tpl-market">📢 MARKET UPDATES 📰</textarea>
 <textarea id="tpl-global">🌎 GLOBAL CUES 📰</textarea>
 <textarea id="tpl-data">📢 DATA ALERT</textarea>
 <textarea id="data-bell-config">{ "arrows": { "up": "⬆️ ", "down": "⬇️ " }, "replacements": { "NEAR": "AT" } }</textarea>
@@ -475,7 +475,7 @@
 </div>
 <div class="flex flex-col gap-3">
 <button class="w-full btn-3d py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold shadow-lg border-brand-800 active:mt-1 active:border-b-0 flex items-center justify-center gap-2" onclick="window.app.dlHtml()">
-<i class="fas fa-file-code"></i> Download Source (HTML)
+<i class="fas fa-file-code"></i> Download Source File (HTML)
                 </button>
 <button class="w-full btn-3d py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl text-xs font-bold border border-slate-300 dark:border-slate-900 active:mt-1 active:border-b-0 flex items-center justify-center gap-2" onclick="window.app.dlExe()">
 <i class="fab fa-windows"></i> Download Desktop App (HTA)
